@@ -1,63 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그인 폼 만들기</title>
+    <title>테이블로 로그인 폼 만들기</title>
     <style>
-        table {
-            border-collapse: collapse;
-            width: 610px;
+        * {
+            margin: 0;
+            padding: 0;
         }
-
-        table,
-        td,
-        th {
-            border: solid 1px #cccccc;
+        body {
+            font-family: "맑은 고딕", "돋움";
+            font-size: 12px;
+            color: #444444;
         }
-
-        tr {
-            height: 40px;
+        table, td, tr {
+            /*border: solid 1px black;*/
+            border-collapse:collapse;
+            padding: 2px;
+        }
+        #schema {
+            width: 22px;
+        }
+        #login_box {
+            width: 220px;
+            height: 120px;
+            border: solid 1px #bbbbbb;
+            border-radius: 15px;
+            margin: 10px 0 0 10px;
+            padding: 10px 5px 0 15px;
+        }        
+        h2 {
+            font-family: "Arial";
+            margin-bottom: 5px;
+        }
+        #login_box input {
+            width: 100px;
+            height: 18px;            
+        }
+        #login_btn {
+            width:80px;
             text-align: center;
         }
-
-        td,
-        th {
-            padding: 5px;
+        #login_btn button {
+         padding: 12px;   
+         border-radius:5px;
+         height:55px;
+         width:70px;
+        }
+        #reg {
+            text-align: center;                        
+        }
+        #reg span {
+            text-decoration:underline;                        
         }
     </style>
 </head>
-
 <body>
-    <table>
-        <div>
-            <th colspan="2"> Member Login </th>
-
-
-            <tr> 
-            <td rowspan="1"> 
-                <span>ID </span>
-                <input type="text"> <br>
-                <span>Pass</span>
-                    <input type="text">
-            </td>
-            <td><button> 로그인 </button></td>
-
-           
-            
-            <tr>
-            <td> 회원가입</td>
-            <td> 아이디 비번찾기</td>
-            </tr>
-
-    
-
-
-        </div><!-- 로그인 박스 완료-->
-    </table>
-
+    <form>
+        <div id="login_box"> <!-- login box -->
+            <h2>Member Login</h2>
+            <table>
+                <tr>
+                    <td id="schema">ID</td>
+                    <td><input type="text"></td>
+                    <td rowspan="2" id="login_btn"><button>로그인</button></td>
+                </tr>
+                <tr>
+                    <td>PW</td>
+                    <td><input type="password"></td>                    
+                </tr>            
+                <tr>
+                    <td id="reg" colspan="3"><span>회원가입</span>&nbsp;&nbsp;<span>아이디/비밀번호 찾기</span></td>                    
+                </tr>
+            </table>            
+        </div> <!-- login box -->
+    </form>
 </body>
-
 </html>
