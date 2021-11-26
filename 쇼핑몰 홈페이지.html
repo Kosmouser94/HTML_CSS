@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쇼핑몰 과제</title>
+    <style>
+        * {
+            margin: 0px;
+            border: solid 1px black;
+        }
+
+        header {
+            background-color: lightgray;
+        }
+
+
+
+        section{
+            margin-top: 20vh;
+        }
+
+
+        #topmenu{
+           height: 100%;
+           width: auto;
+           background: royalblue;
+        }
+
+        #topmenu ul {
+            width: 100%;
+        }
+
+        #topmenu li {
+            height: 40px;
+            color: royalblue;
+            background-color: red;
+            text-align: center;
+            line-height: 40px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        #bottommenu {
+           height: 100%;
+           width: auto;
+           text-align: center;
+           background: royalblue;
+        }
+
+        #bottommenu li {
+            text-align: center;
+            line-height: 40px;
+            vertical-align: middle;
+            display: inline-block;
+        
+        }
+    
+        main {
+            margin: 0 auto;
+            width: 100vw;
+            height: 80vh;
+            background-color: purple;
+        }
+
+       
+
+
+        .text {
+            border-radius: 8px;
+            background: green;
+            background: -webkit-linear-gradient(right, green, yellow);
+            background: -moz-linear-gradient(right, green, yellow);
+            background: -o-linear-gradient(right, green, yellow);
+            background: linear-gradient(to left, green, yellow)
+        }
+
+        ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;   
+        }
+
+        .font-zero {
+            font-size: 0;
+        }
+        .font-zero li{
+            font-size: 1rem;
+        }
+
+    
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 style="text-align: center;"> 쇼핑몰 회원관리 VER 1.0 </h1>
+        <nav id="topmenu">
+                <ul class="font-zero">
+                    <li><a href="#"> 회원등록 </a></li>
+                    <li>회원목록조회/수정</li>
+                    <li>회원매출조회</li>
+                    <li>홈으로</li>
+                </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <table>
+                <caption><span style="font-size: 3em;"></span>쇼핑몰 회원등록</span> </caption>
+
+                <tr>
+                    <th> 회원번호(자동발생) </th>
+                    <td><input type="text" name="membership_Number" class="text"></td>
+                </tr>
+                <tr>
+                    <th> 회원성명 </th>
+                    <td><input type="text" name="membership_name" class="text"></td>
+                </tr>
+                <tr>
+                    <th> 회원주소 </th>
+                    <td><input type="text" name="membership_address" class="text"></td>
+                </tr>
+                <tr>
+                    <th> 가입일자 </th>
+                    <td><input type="text" name="membership_signUpDate" class="text"></td>
+                </tr>
+                <tr>
+                    <th> 고객등급 [A:VIP, B:일반, C:직원] </th>
+                    <td><input type="text" name="membership_grade" class="text"></td>
+                </tr>
+                <tr>
+                    <th> 도시코드 </th>
+                    <td><input type="text" name="membership_cityCode" class="text"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div style="text-align: center;">
+                                <input type="submit" value="등록">
+                                <input type="submit" value="조회">
+                        </div>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer id ="bottommenu">
+        <ul>
+            <li>회사명</li>
+            <li>소개</li>
+            <li>블로그</li>
+            <li>채용정보</li>
+            <li>도움말</li>
+            <li>API</li>
+            <li>개인정보처리방침</li>
+            <li>약관</li>
+            <li>© 2021 회사명</li>
+        </ul>
+    </footer>
+
+
+
+</body>
+
+</html>

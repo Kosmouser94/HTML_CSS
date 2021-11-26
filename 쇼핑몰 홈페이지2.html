@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쇼핑몰 과제</title>
+    <style>
+        * {margin: 0px; padding: 0px;}
+        ul {list-style: none;}
+        a {text-decoration: none;}
+        header {
+            padding-top: 50px;
+            width: 100vw;
+            height: 20vh;
+            background-color: gray;
+            position: relative;
+        }
+
+        nav {
+            position:absolute;
+            width: 100vw;
+            bottom: 0px;
+            font-size: 20px;
+            background-color: darkblue;
+        }
+
+        nav li {
+            display:inline;
+            margin-left: 20px;
+        }
+
+        nav li a {color:white}
+
+        main {
+            padding-top: 50px;
+            background-color: lightgray;
+            width: 100vw;
+            height: 60vh;
+            
+        }
+
+        section {
+            width: 100vw;
+            height: 100%;
+            
+        }
+
+
+        footer {
+            padding-top: 20px;
+            background-color: darkgoldenrod;
+            width: 100vw;
+            height: 20vh;
+
+        }
+
+
+        footer li {
+            display:inline;
+            margin-left: 20px;
+        }
+
+        footer li a {color:white}
+
+      
+        table {
+            table-layout: fixed;
+            height: 350px;
+        }
+
+     
+
+        .text {
+            width: 100%;
+            border-radius: 8px;
+            background: green;
+            background: -webkit-linear-gradient(right, green, yellow);
+            background: -moz-linear-gradient(right, green, yellow);
+            background: -o-linear-gradient(right, green, yellow);
+            background: linear-gradient(to left, green, yellow)
+        }
+
+        .center {
+            text-align: center;
+        }
+
+
+        #page {width: 100vw; margin: 0px auto;}
+
+        @media all and (max-width: 600px) {
+        nav li{
+        display: block;
+        text-align: center;
+    }
+}
+
+ 
+    </style>
+</head>
+
+<body>
+
+        <div id="page">
+    <header>
+        <div class="center">
+            <h1> 쇼핑몰 회원관리 VER 1.0 </h1>
+        </div>
+    
+
+
+
+    <nav>
+        <ul>
+            <li><a href="#">회원등록 </a></li>
+            <li><a href="#">회원목록조회/수정</a></li>
+            <li><a href="#">회원매출조회</a></li>
+            <li><a href="#">홈으로</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+    <main>
+        <section>
+            <form>
+                <table style="border:1px solid black; border-radius: 8px; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto;">
+                    <caption style="font-size: 3rem;"> 쇼핑몰 회원등록</caption>
+
+                    <tr>
+                        <th> 회원번호(자동발생) </th>
+                        <td><input type="text" name="membership_Number" class="text"></td>
+                    </tr>
+                    <tr>
+                        <th> 회원성명 </th>
+                        <td><input type="text" name="membership_name" class="text"></td>
+                    </tr>
+                    <tr>
+                        <th> 회원주소 </th>
+                        <td><input type="text" name="membership_address" class="text"></td>
+                    </tr>
+                    <tr>
+                        <th> 가입일자 </th>
+                        <td><input type="text" name="membership_signUpDate" class="text"></td>
+                    </tr>
+                    <tr>
+                        <th> 고객등급 [A:VIP, B:일반, C:직원] </th>
+                        <td><input type="text" name="membership_grade" class="text"></td>
+                    </tr>
+                    <tr>
+                        <th> 도시코드 </th>
+                        <td><input type="text" name="membership_cityCode" class="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="center" colspan="2">
+                            <input type="submit" value="등록">
+                            <input type="submit" value="조회">
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <ul class="center">
+            <li><a href="#">회사명</a></li>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">블로그</a></li>
+            <li><a href="#">채용정보</a></li> <br>
+            <li><a href="#">도움말</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">약관</a></li>
+            <li><a href="#">© 2021 회사명</a></li>
+        </ul>
+    </footer>
+
+
+</div>
+</body>
+
+</html>
